@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CreateStaff — AI Employee Consulting Website
+
+Production-grade marketing website for CreateStaff, an AI consulting company that builds custom AI employees for businesses.
+
+## Tech Stack
+
+- **Framework**: Next.js 16 (App Router) + React 19 + TypeScript
+- **Styling**: Tailwind CSS v4
+- **3D**: Three.js via @react-three/fiber + @react-three/drei
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Deployment**: Vercel
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Environment Variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Copy `.env.example` to `.env.local` and fill in:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+NEXT_PUBLIC_CALENDLY_URL=       # Calendly scheduling URL
+NEXT_PUBLIC_GA_ID=              # Google Analytics GA4 measurement ID
+STRIPE_SECRET_KEY=              # Stripe secret key
+STRIPE_PUBLIC_KEY=              # Stripe publishable key
+RESEND_API_KEY=                 # Resend email API key
+NEXT_PUBLIC_SITE_URL=           # Site URL (default: https://createstaff.com)
+```
 
-## Learn More
+## Pages
 
-To learn more about Next.js, take a look at the following resources:
+| Route | Description |
+|-------|-------------|
+| `/` | Homepage with 3D hero, services, testimonials, stats |
+| `/services` | All AI employee services overview |
+| `/services/[slug]` | Individual service detail pages |
+| `/how-it-works` | 5-step process explained |
+| `/about` | Company mission, values, team |
+| `/pricing` | Build packages + support subscription |
+| `/blog` | Blog listing page |
+| `/blog/[slug]` | Individual blog posts |
+| `/contact` | Contact form + Calendly embed |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+See `architecture.md` for full project architecture documentation.
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Optimized for Vercel. Push to main branch to trigger automatic deployment.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+vercel --prod
+```
