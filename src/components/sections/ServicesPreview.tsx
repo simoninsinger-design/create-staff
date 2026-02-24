@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Calendar, Network, Megaphone, Search, Settings, ArrowRight } from 'lucide-react'
 import { useTheme } from '@/components/layout/ThemeProvider'
 import { SectionHeading } from '@/components/ui/SectionHeading'
@@ -38,7 +39,7 @@ export function ServicesPreview() {
     <section className={cn('py-24 lg:py-32', isDark ? 'bg-navy-light' : 'bg-white')}>
       <Container>
         <SectionHeading
-          badge="Our Services"
+          badge="Meet Your AI Team"
           title="AI employees for every role."
           subtitle="From executive support to sales outreach, we build AI that does real work — not just chatbot demos."
         />
@@ -57,35 +58,66 @@ export function ServicesPreview() {
                 <Link href={`/services/${service.slug}`}>
                   <div
                     className={cn(
-                      'group relative h-full rounded-xl border p-6 transition-all duration-300',
+                      'group relative h-full overflow-hidden rounded-xl border transition-all duration-300',
                       isDark
                         ? 'border-border-dark bg-navy hover:border-blue-electric/40 hover:shadow-lg hover:shadow-blue-electric/5'
                         : 'border-border-light bg-offwhite hover:border-blue-electric/40 hover:shadow-lg'
                     )}
                   >
-                    {/* Icon */}
-                    <div className={cn(
-                      'mb-4 flex h-12 w-12 items-center justify-center rounded-xl transition-colors duration-300',
-                      isDark
-                        ? 'bg-blue-electric/10 group-hover:bg-blue-electric/20'
-                        : 'bg-blue-electric/5 group-hover:bg-blue-electric/10'
-                    )}>
-                      <Icon size={24} className="text-blue-electric" />
+                    {/* Persona image */}
+                    <div className="relative h-48 w-full overflow-hidden">
+                      <Image
+                        src={service.persona.image}
+                        alt={`${service.persona.name} — ${service.title}`}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      />
+                      {/* Gradient overlay */}
+                      <div className={cn(
+                        'absolute inset-0 bg-gradient-to-t',
+                        isDark
+                          ? 'from-navy via-navy/60 to-transparent'
+                          : 'from-offwhite via-offwhite/60 to-transparent'
+                      )} />
+                      {/* Persona name badge */}
+                      <div className="absolute bottom-3 left-4">
+                        <span className="rounded-full bg-blue-electric/90 px-3 py-1 text-xs font-bold text-white backdrop-blur-sm">
+                          {service.persona.name}
+                        </span>
+                      </div>
+                      {/* Icon badge */}
+                      <div className="absolute right-4 top-3">
+                        <div className={cn(
+                          'flex h-9 w-9 items-center justify-center rounded-lg backdrop-blur-sm',
+                          'bg-navy/50 border border-white/10'
+                        )}>
+                          <Icon size={18} className="text-blue-glow" />
+                        </div>
+                      </div>
                     </div>
 
                     {/* Content */}
-                    <h3 className="text-lg font-bold">{service.title}</h3>
-                    <p className={cn(
-                      'mt-2 text-sm leading-relaxed',
-                      isDark ? 'text-silver' : 'text-muted-light'
-                    )}>
-                      {service.shortDescription}
-                    </p>
+                    <div className="p-5">
+                      <h3 className="text-lg font-bold">{service.title}</h3>
+                      <p className={cn(
+                        'mt-1 text-xs font-medium italic',
+                        'text-blue-electric'
+                      )}>
+                        &ldquo;{service.persona.tagline}&rdquo;
+                      </p>
+                      <p className={cn(
+                        'mt-3 text-sm leading-relaxed',
+                        isDark ? 'text-silver' : 'text-muted-light'
+                      )}>
+                        {service.shortDescription}
+                      </p>
 
-                    {/* Link */}
-                    <div className="mt-4 flex items-center gap-1 text-sm font-semibold text-blue-electric opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                      Learn More
-                      <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
+                      {/* Link */}
+                      <div className="mt-4 flex items-center gap-1 text-sm font-semibold text-blue-electric">
+                        Meet {service.persona.name}
+                        <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" />
+                      </div>
                     </div>
 
                     {/* Hover glow effect */}

@@ -2,6 +2,7 @@
 
 import { useParams } from 'next/navigation'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import { Calendar, Network, Megaphone, Search, Settings, Check, ArrowRight, ChevronDown } from 'lucide-react'
 import { useTheme } from '@/components/layout/ThemeProvider'
 import { Container } from '@/components/ui/Container'
@@ -91,11 +92,28 @@ export default function ServiceDetailPage() {
             transition={{ duration: 0.6 }}
             className="mx-auto max-w-3xl text-center"
           >
+            {/* Persona avatar */}
+            <div className="relative mx-auto mb-6 h-24 w-24 overflow-hidden rounded-full border-2 border-blue-electric/30 shadow-lg shadow-blue-electric/10">
+              <Image
+                src={service.persona.image}
+                alt={service.persona.name}
+                fill
+                className="object-cover"
+                sizes="96px"
+                priority
+              />
+            </div>
+            <span className="inline-block rounded-full bg-blue-electric/90 px-3 py-1 text-xs font-bold text-white">
+              Meet {service.persona.name}
+            </span>
+            <p className={cn('mt-2 text-sm italic', 'text-blue-electric')}>
+              &ldquo;{service.persona.tagline}&rdquo;
+            </p>
             <div className={cn(
-              'mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl',
+              'mx-auto mt-4 mb-6 flex h-10 w-10 items-center justify-center rounded-xl',
               isDark ? 'bg-blue-electric/10' : 'bg-blue-electric/5'
             )}>
-              <Icon size={32} className="text-blue-electric" />
+              <Icon size={20} className="text-blue-electric" />
             </div>
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
               {service.title}

@@ -23,6 +23,12 @@ export const SERVICES = [
     shortDescription: 'Automate scheduling, email management, and daily operations with an AI that never sleeps.',
     description: 'Your AI Executive Assistant handles calendar management, email triage, meeting prep, travel coordination, and administrative tasks around the clock. It learns your preferences and gets smarter over time.',
     icon: 'calendar',
+    persona: {
+      name: 'Ava',
+      image: '/personas/ai-executive-assistant.jpg',
+      tagline: 'Your 24/7 executive right hand',
+      bio: 'Ava keeps your calendar flawless, your inbox at zero, and your meetings prepped before you even ask. She learns your priorities, anticipates conflicts, and handles the admin that used to eat half your day.',
+    },
     capabilities: [
       'Intelligent calendar management and scheduling optimization',
       'Email triage, drafting, and response management',
@@ -54,6 +60,12 @@ export const SERVICES = [
     shortDescription: 'Strategic operations support that keeps your entire organization aligned and moving forward.',
     description: 'Your AI Chief of Staff manages cross-functional coordination, tracks OKRs, prepares board materials, and ensures nothing falls through the cracks across your organization.',
     icon: 'network',
+    persona: {
+      name: 'Marcus',
+      image: '/personas/ai-chief-of-staff.jpg',
+      tagline: 'The operational backbone you\'ve been missing',
+      bio: 'Marcus tracks every project, prepares every board update, and keeps your leadership team aligned — without a single thing slipping through the cracks. He sees the big picture so you can focus on steering the ship.',
+    },
     capabilities: [
       'Cross-functional project coordination and tracking',
       'OKR management and progress reporting',
@@ -85,6 +97,12 @@ export const SERVICES = [
     shortDescription: 'Automated outreach, lead qualification, and pipeline management that runs 24/7.',
     description: 'Your AI SDR handles prospecting, personalized outreach, lead scoring, follow-ups, and CRM management. It books qualified meetings on your calendar while you focus on closing.',
     icon: 'megaphone',
+    persona: {
+      name: 'Sierra',
+      image: '/personas/ai-sales-development-rep.jpg',
+      tagline: 'Pipeline that builds itself while you sleep',
+      bio: 'Sierra researches every prospect, crafts hyper-personalized outreach, and follows up relentlessly until the meeting is booked. She processes thousands of leads and never lets a warm opportunity go cold.',
+    },
     capabilities: [
       'Automated prospecting and lead list building',
       'Personalized multi-channel outreach (email, LinkedIn)',
@@ -116,6 +134,12 @@ export const SERVICES = [
     shortDescription: 'Deep research, competitive intelligence, and data analysis delivered on demand.',
     description: 'Your AI Research Analyst monitors markets, analyzes competitors, synthesizes data from multiple sources, and delivers actionable insights — all without the 6-month ramp-up of a junior analyst.',
     icon: 'search',
+    persona: {
+      name: 'Kai',
+      image: '/personas/ai-research-analyst.jpg',
+      tagline: 'Insight at the speed of thought',
+      bio: 'Kai reads 1,000 articles while your analyst reads 10. He monitors markets, tracks competitors, synthesizes data from dozens of sources, and delivers executive-ready insights on demand.',
+    },
     capabilities: [
       'Competitive intelligence monitoring and reporting',
       'Market research and trend analysis',
@@ -147,6 +171,12 @@ export const SERVICES = [
     shortDescription: 'Got a unique role in mind? We\'ll build a custom AI employee tailored to your exact needs.',
     description: 'Every business is different. We work with you to identify the perfect role for AI automation and build a custom AI employee that fits seamlessly into your existing workflows and tools.',
     icon: 'settings',
+    persona: {
+      name: 'Nova',
+      image: '/personas/custom-ai-employees.jpg',
+      tagline: 'Built from scratch for your exact needs',
+      bio: 'Nova is whatever your business needs her to be. From logistics coordination to compliance monitoring to customer onboarding — she\'s custom-engineered for the role only your company has.',
+    },
     capabilities: [
       'Custom workflow automation for any repeatable role',
       'Integration with your existing tool stack',

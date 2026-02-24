@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Calendar, Network, Megaphone, Search, Settings, ArrowRight, Check } from 'lucide-react'
 import { useTheme } from '@/components/layout/ThemeProvider'
 import { SectionHeading } from '@/components/ui/SectionHeading'
@@ -116,15 +117,40 @@ export default function ServicesPage() {
                     </div>
                   </div>
 
-                  {/* Visual placeholder */}
+                  {/* Persona card */}
                   <div className={!isEven ? 'lg:order-1' : ''}>
                     <div className={cn(
-                      'flex h-64 items-center justify-center rounded-2xl border sm:h-80',
-                      isDark
-                        ? 'border-border-dark bg-navy'
-                        : 'border-border-light bg-offwhite'
+                      'relative overflow-hidden rounded-2xl border',
+                      isDark ? 'border-border-dark' : 'border-border-light'
                     )}>
-                      <Icon size={64} className="text-blue-electric/20" />
+                      <div className="relative h-64 sm:h-80">
+                        <Image
+                          src={service.persona.image}
+                          alt={`${service.persona.name} — ${service.title}`}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 1024px) 100vw, 50vw"
+                        />
+                        <div className={cn(
+                          'absolute inset-0 bg-gradient-to-t',
+                          isDark
+                            ? 'from-navy via-navy/40 to-transparent'
+                            : 'from-white via-white/40 to-transparent'
+                        )} />
+                      </div>
+                      <div className={cn(
+                        'absolute bottom-0 left-0 right-0 p-6',
+                      )}>
+                        <span className="rounded-full bg-blue-electric/90 px-3 py-1 text-xs font-bold text-white">
+                          {service.persona.name}
+                        </span>
+                        <p className={cn(
+                          'mt-3 text-sm leading-relaxed',
+                          isDark ? 'text-silver' : 'text-muted-light'
+                        )}>
+                          {service.persona.bio}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </motion.div>
