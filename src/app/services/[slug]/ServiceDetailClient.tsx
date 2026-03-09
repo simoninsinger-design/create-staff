@@ -196,6 +196,7 @@ export default function ServiceDetailClient() {
                   ['Consistency', 'Always on', 'Variable'],
                   ['Turnover risk', 'None', 'Average 2-3 year tenure'],
                   ['Training needed', 'Built-in', '30-90 days ramp'],
+                  ['Improves over time', 'Automatically', 'Requires retraining'],
                 ].map(([feature, ai, traditional]) => (
                   <tr key={feature} className={cn('border-b', isDark ? 'border-border-dark' : 'border-border-light')}>
                     <td className="py-4 text-sm font-medium">{feature}</td>

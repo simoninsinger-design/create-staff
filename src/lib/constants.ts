@@ -436,4 +436,8 @@ export const PRICING_FAQ = [
     question: 'Do I own the AI employee you build?',
     answer: 'Yes. Unlike SaaS subscriptions, what we build is yours. If you cancel support, your AI employee keeps working. You own the asset.',
   },
+  {
+    question: 'What happens as AI models get better?',
+    answer: 'Your agent gets better too. As the underlying models from OpenAI, Anthropic, and others improve, your AI employee inherits those gains — better reasoning, faster responses, and new capabilities. It\'s like hiring someone who gets smarter every quarter without retraining.',
+  },
 ]

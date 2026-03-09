@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { AlertTriangle, Zap, DollarSign, Clock, TrendingUp, Shield } from 'lucide-react'
+import { AlertTriangle, Zap, DollarSign, Clock, TrendingUp, Shield, BrainCircuit } from 'lucide-react'
 import { useTheme } from '@/components/layout/ThemeProvider'
 import { SectionHeading } from '@/components/ui/SectionHeading'
 import { Container } from '@/components/ui/Container'
@@ -40,6 +40,11 @@ const solutions = [
     icon: Shield,
     title: 'Deployed in days',
     description: 'From discovery call to live AI employee in under 2 weeks. No job postings required.',
+  },
+  {
+    icon: BrainCircuit,
+    title: 'Gets smarter over time',
+    description: 'As AI models improve, so does your agent — automatically. Your investment appreciates instead of depreciates.',
   },
 ]
 

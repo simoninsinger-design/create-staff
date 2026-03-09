@@ -26,6 +26,7 @@ const rows: readonly ComparisonRow[] = [
   { feature: 'Domain expertise', createstaff: 'yes', fulltime: 'yes', freelancer: 'partial', diy: 'no' },
   { feature: 'No turnover risk', createstaff: 'yes', fulltime: 'no', freelancer: 'no', diy: 'yes' },
   { feature: 'Continuous improvement', createstaff: 'yes', fulltime: 'partial', freelancer: 'no', diy: 'partial' },
+  { feature: 'Gets smarter over time', createstaff: 'yes', fulltime: 'no', freelancer: 'no', diy: 'partial' },
 ]
 
 const columnHeaders = [
