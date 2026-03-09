@@ -182,22 +182,17 @@ export default function ContactPage() {
                     30 minutes. No commitment. Let&apos;s explore what&apos;s possible.
                   </p>
                 </div>
-                {/* TODO: Replace with actual Calendly URL */}
                 <div className={cn(
-                  'flex h-[400px] items-center justify-center',
+                  'h-[580px]',
                   isDark ? 'bg-navy-light' : 'bg-white'
                 )}>
-                  <div className="text-center">
-                    <p className={cn('text-sm', isDark ? 'text-silver/50' : 'text-muted-light')}>
-                      Calendly embed will appear here
-                    </p>
-                    <p className={cn('mt-1 text-xs', isDark ? 'text-silver/30' : 'text-muted-light/50')}>
-                      Set NEXT_PUBLIC_CALENDLY_URL in .env
-                    </p>
-                    <Button href={SITE_CONFIG.calendlyUrl} variant="outline" size="sm" className="mt-4">
-                      Open Scheduling Page
-                    </Button>
-                  </div>
+                  <iframe
+                    src={`${SITE_CONFIG.calendlyUrl}?hide_gdpr_banner=1&background_color=${isDark ? '111D31' : 'ffffff'}&text_color=${isDark ? 'C0C8D4' : '0A1628'}&primary_color=2563EB`}
+                    width="100%"
+                    height="100%"
+                    frameBorder="0"
+                    title="Schedule a discovery call"
+                  />
                 </div>
               </div>
 
