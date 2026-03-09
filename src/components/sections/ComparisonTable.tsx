@@ -18,8 +18,8 @@ interface ComparisonRow {
 }
 
 const rows: readonly ComparisonRow[] = [
-  { feature: 'Setup cost', createstaff: '$8,500-40K+', fulltime: '$10K+ (recruiting)', freelancer: '$2K-5K', diy: '$0 (your time)' },
-  { feature: 'Monthly cost', createstaff: '$0-3,000', fulltime: '$6.5K-15K+', freelancer: '$3K-8K', diy: 'Your time' },
+  { feature: 'Setup cost', createstaff: '$5K-25K+', fulltime: '$10K+ (recruiting)', freelancer: '$2K-5K', diy: '$0 (your time)' },
+  { feature: 'Monthly cost', createstaff: '$250-1,000', fulltime: '$6.5K-15K+', freelancer: '$3K-8K', diy: 'Your time' },
   { feature: '24/7 availability', createstaff: 'yes', fulltime: 'no', freelancer: 'no', diy: 'partial' },
   { feature: 'Time to deploy', createstaff: '2 weeks', fulltime: '2-4 months', freelancer: '2-4 weeks', diy: '1-6 months' },
   { feature: 'Scales instantly', createstaff: 'yes', fulltime: 'no', freelancer: 'no', diy: 'partial' },

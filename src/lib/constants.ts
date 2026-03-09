@@ -3,7 +3,7 @@ export const SITE_CONFIG = {
   tagline: 'We build AI employees so you don\'t have to hire for every role.',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://createstaff.com',
   email: 'hello@createstaff.com',
-  calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL || 'https://calendly.com/createstaff',
+  calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL || 'https://calendly.com/simoni-umich/discovery',
   gaId: process.env.NEXT_PUBLIC_GA_ID || '',
 } as const
 
@@ -301,23 +301,16 @@ export const HOW_IT_WORKS_STEPS = [
 ] as const
 
 export const PRICING_TIERS = [
-  /*
-   * Pricing based on market research (Feb 2026):
-   * - AI automation agencies charge $5K-$100K+ for custom builds
-   * - SaaS AI agents (Artisan, 11x) run $500-$7,200/mo
-   * - Traditional hires cost $78K-$182K/yr fully loaded
-   * - Positioned at 20-30% of Year 1 hiring cost for compelling ROI
-   */
   {
     name: 'Starter',
-    description: 'Automate your first role with a focused AI agent',
-    price: '8,500',
+    description: 'Automate your first task with a focused AI agent',
+    price: '5,000',
     period: 'one-time',
     features: [
       '1 AI agent — single focused function',
       'Discovery call & workflow audit',
       'Integration with 1-2 tools',
-      '2-week build timeline',
+      '1-2 week build timeline',
       '1 round of revisions',
       'Documentation & training session',
       '14 days post-launch support',
@@ -328,35 +321,35 @@ export const PRICING_TIERS = [
   {
     name: 'Core',
     description: 'A full AI employee that replaces an entire role',
-    price: '18,000',
+    price: '12,000',
     period: 'starting at',
     features: [
       '1 AI employee — 3-5 integrated capabilities',
       'Comprehensive workflow audit & strategy',
       'Integration with 3-5 tools',
-      '4-6 week build timeline',
+      '3-4 week build timeline',
       '2 rounds of revisions',
       'Documentation, training & video walkthrough',
       '30 days post-launch support',
-      'Custom prompt engineering & knowledge base',
+      'Custom knowledge base built on your docs & SOPs',
     ],
     highlighted: true,
     cta: 'Get Started',
   },
   {
     name: 'Department',
-    description: 'Multiple AI employees or complex multi-agent systems',
-    price: '40,000',
+    description: 'Multiple AI agents that work together as a team',
+    price: '25,000',
     period: 'starting at',
     features: [
-      '2-4 AI employees or multi-agent system',
-      'Full AI strategy & executive alignment',
-      'Enterprise tool stack integration',
-      '8-12 week build timeline',
-      '3 rounds of revisions',
+      '2-4 coordinated AI agents with handoff logic',
+      'Full AI strategy & executive alignment sessions',
+      'Integration with 5-10+ tools',
+      '6-8 week build timeline',
+      'Unlimited revisions during build',
       'Custom dashboards & reporting',
       '60 days post-launch support',
-      'Team training (4+ hours) & ongoing office hours',
+      'Team training & ongoing office hours',
     ],
     highlighted: false,
     cta: "Let's Talk",
@@ -364,30 +357,24 @@ export const PRICING_TIERS = [
 ] as const
 
 export const SUPPORT_PLANS = [
-  /*
-   * Support pricing: covers LLM API costs ($100-500/mo), monitoring,
-   * and optimization work. Market rate: $500-$8,000/mo.
-   */
   {
-    name: 'Maintenance',
-    price: '750',
+    name: 'Starter',
+    price: '250',
     period: 'month',
     features: [
       'Monitoring & uptime management',
-      'Bug fixes & minor adjustments (up to 4 hrs/mo)',
-      'Monthly performance report',
+      'Bug fixes & minor adjustments',
       'Email support (48-hour response)',
       'API/integration break-fix',
     ],
   },
   {
     name: 'Growth',
-    price: '1,500',
+    price: '500',
     period: 'month',
     recommended: true,
     features: [
-      'Everything in Maintenance',
-      'Up to 10 hours/mo of optimization work',
+      'Everything in Starter support',
       'Prompt tuning & performance improvements',
       'Monthly strategy call (30 min)',
       'Priority support (24-hour response)',
@@ -396,11 +383,10 @@ export const SUPPORT_PLANS = [
   },
   {
     name: 'Partner',
-    price: '3,000',
+    price: '1,000',
     period: 'month',
     features: [
-      'Everything in Growth',
-      'Up to 20 hours/mo of development work',
+      'Everything in Growth support',
       'Quarterly business review with ROI analysis',
       'New builds at 15% discount',
       'Same-day support response',
@@ -411,15 +397,13 @@ export const SUPPORT_PLANS = [
 
 /* Legacy single support plan export for backward compat */
 export const SUPPORT_PLAN = {
-  price: '1,500',
+  price: '250',
   period: 'month',
   features: [
-    'Priority support via Slack or dedicated channel',
-    'Monthly performance reviews & optimization',
-    'Up to 10 hours/mo of optimization work',
-    'Prompt tuning & performance improvements',
-    'Monthly strategy call',
-    'Priority support (24-hour response)',
+    'Monitoring & uptime management',
+    'Bug fixes & minor adjustments',
+    'Email support (48-hour response)',
+    'API/integration break-fix',
   ],
 }
 
@@ -434,7 +418,7 @@ export const PRICING_FAQ = [
   },
   {
     question: 'How long does a typical build take?',
-    answer: 'Starter agents take about 2 weeks. Core AI employees take 4-6 weeks. Department-level builds take 8-12 weeks. We\'ll give you a precise timeline after the discovery call.',
+    answer: 'Starter agents take about 1-2 weeks. Core AI employees take 3-4 weeks. Department-level builds take 6-8 weeks. We\'ll give you a precise timeline after the discovery call.',
   },
   {
     question: 'What tools and platforms do you integrate with?',
@@ -442,11 +426,11 @@ export const PRICING_FAQ = [
   },
   {
     question: 'Do I need the ongoing support subscription?',
-    answer: 'Not required — your AI employee works even without a support plan. But AI agents perform best with continuous tuning. The Growth plan ($1,500/mo) is our most popular choice.',
+    answer: 'Not required — your AI employee works even without a support plan. But AI agents perform best with continuous tuning. The Growth plan ($500/mo) is our most popular choice.',
   },
   {
     question: 'How does this compare to hiring someone?',
-    answer: 'A full-time employee costs $78K-$182K/year fully loaded (salary + benefits + recruiting + overhead). A Core AI employee costs $18K to build and $750-$1,500/mo to maintain — and works 24/7. Most clients see ROI within 3 months.',
+    answer: 'A full-time employee costs $78K-$182K/year fully loaded (salary + benefits + recruiting + overhead). A Core AI employee costs $12K to build and $250-$500/mo to maintain — and works 24/7. Most clients see ROI within the first month.',
   },
   {
     question: 'Do I own the AI employee you build?',

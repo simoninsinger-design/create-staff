@@ -189,7 +189,7 @@ export default function ServiceDetailClient() {
               </thead>
               <tbody>
                 {[
-                  ['Annual cost', '$4,500 + $0-2,500/mo', '$80K-120K+ fully loaded'],
+                  ['Annual cost', '$5,000 + $250/mo', '$80K-120K+ fully loaded'],
                   ['Availability', '24/7/365', '40 hrs/week'],
                   ['Time to deploy', '2 weeks', '2-4 months'],
                   ['Scalability', 'Instant', 'Months per hire'],
