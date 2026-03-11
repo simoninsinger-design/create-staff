@@ -47,13 +47,22 @@ export const metadata: Metadata = {
     title: 'CreateStaff — We Build AI Employees',
     description:
       'We build custom AI employees so you don\'t have to hire for every role. From AI executive assistants to sales reps, deployed in under 2 weeks.',
+    images: [
+      {
+        url: '/logo.jpeg',
+        width: 200,
+        height: 200,
+        alt: 'CreateStaff',
+      },
+    ],
   },
   twitter: {
-    card: 'summary_large_image',
+    card: 'summary',
     title: 'CreateStaff — We Build AI Employees',
     description:
       'We build custom AI employees so you don\'t have to hire for every role.',
     creator: '@createstaff',
+    images: ['/logo.jpeg'],
   },
   robots: {
     index: true,

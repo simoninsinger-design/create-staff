@@ -20,17 +20,17 @@ export const SERVICES = [
   {
     slug: 'ai-executive-assistant',
     title: 'AI Executive Assistant',
-    shortDescription: 'Automate scheduling, email management, and daily operations with an AI that never sleeps.',
-    description: 'Your AI Executive Assistant handles calendar management, email triage, meeting prep, travel coordination, and administrative tasks around the clock. It learns your preferences and gets smarter over time.',
+    shortDescription: 'Handles scheduling, email triage, and daily admin. Runs around the clock.',
+    description: 'Manages your calendar, sorts your email, preps meetings, coordinates travel, and handles admin tasks 24/7. Learns how you work and adapts over time.',
     icon: 'calendar',
     persona: {
       name: 'Ava',
       image: '/personas/ai-executive-assistant.jpg',
       tagline: 'Your 24/7 executive right hand',
-      bio: 'Ava keeps your calendar flawless, your inbox at zero, and your meetings prepped before you even ask. She learns your priorities, anticipates conflicts, and handles the admin that used to eat half your day.',
+      bio: 'Ava runs your calendar, keeps your inbox manageable, and preps your meetings before you ask. She learns what you prioritize, catches scheduling conflicts, and takes over the admin work that eats half your day.',
     },
     capabilities: [
-      'Intelligent calendar management and scheduling optimization',
+      'Calendar management and scheduling',
       'Email triage, drafting, and response management',
       'Meeting preparation with automated briefing documents',
       'Travel planning and expense tracking',
@@ -57,14 +57,14 @@ export const SERVICES = [
   {
     slug: 'ai-chief-of-staff',
     title: 'AI Chief of Staff',
-    shortDescription: 'Strategic operations support that keeps your entire organization aligned and moving forward.',
-    description: 'Your AI Chief of Staff manages cross-functional coordination, tracks OKRs, prepares board materials, and ensures nothing falls through the cracks across your organization.',
+    shortDescription: 'Tracks projects, prepares board materials, and keeps your leadership team on the same page.',
+    description: 'Coordinates across teams, tracks OKRs, prepares board materials, and makes sure nothing slips between departments.',
     icon: 'network',
     persona: {
       name: 'Marcus',
       image: '/personas/ai-chief-of-staff.jpg',
-      tagline: 'The operational backbone you\'ve been missing',
-      bio: 'Marcus tracks every project, prepares every board update, and keeps your leadership team aligned — without a single thing slipping through the cracks. He sees the big picture so you can focus on steering the ship.',
+      tagline: 'Keeps your whole operation in sync',
+      bio: 'Marcus tracks every project, prepares every board update, and keeps your leadership team in sync. He handles the operational overhead so you can focus on running the company.',
     },
     capabilities: [
       'Cross-functional project coordination and tracking',
@@ -94,14 +94,14 @@ export const SERVICES = [
   {
     slug: 'ai-sales-development-rep',
     title: 'AI Sales Development Rep',
-    shortDescription: 'Automated outreach, lead qualification, and pipeline management that runs 24/7.',
-    description: 'Your AI SDR handles prospecting, personalized outreach, lead scoring, follow-ups, and CRM management. It books qualified meetings on your calendar while you focus on closing.',
+    shortDescription: 'Handles prospecting, personalized outreach, and follow-ups around the clock.',
+    description: 'Prospects, writes personalized outreach, scores leads, manages follow-ups, and keeps your CRM updated. Books qualified meetings while you focus on closing.',
     icon: 'megaphone',
     persona: {
       name: 'Sierra',
       image: '/personas/ai-sales-development-rep.jpg',
       tagline: 'Pipeline that builds itself while you sleep',
-      bio: 'Sierra researches every prospect, crafts hyper-personalized outreach, and follows up relentlessly until the meeting is booked. She processes thousands of leads and never lets a warm opportunity go cold.',
+      bio: 'Sierra researches every prospect, writes personalized outreach, and follows up until the meeting is booked. She works through thousands of leads and never drops a warm opportunity.',
     },
     capabilities: [
       'Automated prospecting and lead list building',
@@ -131,14 +131,14 @@ export const SERVICES = [
   {
     slug: 'ai-research-analyst',
     title: 'AI Research Analyst',
-    shortDescription: 'Deep research, competitive intelligence, and data analysis delivered on demand.',
-    description: 'Your AI Research Analyst monitors markets, analyzes competitors, synthesizes data from multiple sources, and delivers actionable insights — all without the 6-month ramp-up of a junior analyst.',
+    shortDescription: 'Market research, competitive intel, and data analysis when you need it.',
+    description: 'Monitors markets, tracks competitors, pulls data from multiple sources, and turns it into usable analysis. No 6-month ramp-up period.',
     icon: 'search',
     persona: {
       name: 'Kai',
       image: '/personas/ai-research-analyst.jpg',
-      tagline: 'Insight at the speed of thought',
-      bio: 'Kai reads 1,000 articles while your analyst reads 10. He monitors markets, tracks competitors, synthesizes data from dozens of sources, and delivers executive-ready insights on demand.',
+      tagline: 'Research on demand',
+      bio: 'Kai reads 1,000 articles while your analyst reads 10. He monitors markets, tracks competitors, pulls from dozens of sources, and puts together exec-ready analysis when you need it.',
     },
     capabilities: [
       'Competitive intelligence monitoring and reporting',
@@ -146,7 +146,7 @@ export const SERVICES = [
       'Financial data analysis and visualization',
       'News and sentiment monitoring',
       'Custom research reports on demand',
-      'Data synthesis from multiple sources into executive summaries',
+      'Pulls data from multiple sources into executive summaries',
     ],
     targetBuyer: 'Investment firms, strategy teams, and executives who need research capacity without hiring a team of analysts.',
     useCase: 'A venture capital firm deployed an AI Research Analyst to screen 500+ deals monthly, produce investment memos, and track portfolio company metrics — work that previously required 3 junior analysts.',
@@ -168,14 +168,14 @@ export const SERVICES = [
   {
     slug: 'custom-ai-employees',
     title: 'Custom AI Employees',
-    shortDescription: 'Got a unique role in mind? We\'ll build a custom AI employee tailored to your exact needs.',
-    description: 'Every business is different. We work with you to identify the perfect role for AI automation and build a custom AI employee that fits seamlessly into your existing workflows and tools.',
+    shortDescription: 'Have a specific role in mind? We\'ll build an AI employee around it.',
+    description: 'Every business is different. We figure out the right role for AI, then build something that plugs into your existing workflows and tools.',
     icon: 'settings',
     persona: {
       name: 'Nova',
       image: '/personas/custom-ai-employees.jpg',
       tagline: 'Built from scratch for your exact needs',
-      bio: 'Nova is whatever your business needs her to be. From logistics coordination to compliance monitoring to customer onboarding — she\'s custom-engineered for the role only your company has.',
+      bio: 'Nova is whatever your business needs. Logistics coordination, compliance monitoring, customer onboarding — she\'s built for the role only your company has.',
     },
     capabilities: [
       'Custom workflow automation for any repeatable role',
@@ -207,21 +207,21 @@ export const SERVICES = [
 export const TESTIMONIALS = [
   /* TODO: Replace with real testimonials — Simon to provide actual client feedback for 3 companies */
   {
-    quote: 'CreateStaff built us an AI executive assistant that handles 80% of what our previous EA did — for a fraction of the cost. It\'s like having a team member who never takes a day off.',
+    quote: 'CreateStaff built us an AI assistant that handles about 80% of what our previous EA did, at maybe a tenth of the cost. It\'s like having someone on the team who\'s always on.',
     name: 'Client 1',
     role: 'CEO',
     company: 'Company A',
     rating: 5,
   },
   {
-    quote: 'We were skeptical about AI replacing our SDR function, but the results speak for themselves. The outreach quality is indistinguishable from our best reps and we\'re booking more meetings than ever.',
+    quote: 'We didn\'t think AI could handle our outbound. The outreach quality surprised us — we\'re booking more meetings now than we were with a human rep.',
     name: 'Client 2',
     role: 'Founder',
     company: 'Company B',
     rating: 5,
   },
   {
-    quote: 'The custom AI employee they built for our operations cut our manual workload dramatically. The ROI was evident within the first month.',
+    quote: 'The custom AI they built for our ops team cut our manual work by about half. Paid for itself within the first month.',
     name: 'Client 3',
     role: 'COO',
     company: 'Company C',
@@ -242,7 +242,7 @@ export const HOW_IT_WORKS_STEPS = [
     step: 1,
     title: 'Discovery Call',
     shortDescription: 'We learn your business and identify the roles AI can fill.',
-    fullDescription: 'A 30-minute conversation where we understand your business, team structure, pain points, and goals. We identify which roles have the highest automation potential and biggest ROI.',
+    fullDescription: 'A 30-minute call where we get to know your business, team setup, and goals. We figure out which roles make the most sense to automate first.',
     details: [
       'Share your current workflow challenges',
       'Identify the highest-impact role to automate first',
@@ -254,7 +254,7 @@ export const HOW_IT_WORKS_STEPS = [
     step: 2,
     title: 'Workflow Audit',
     shortDescription: 'We map your workflows and find automation opportunities.',
-    fullDescription: 'Our team dives deep into your existing processes, tools, and data flows. We document every step of the role we\'re automating and identify exactly where AI can deliver the most value.',
+    fullDescription: 'We go through your existing processes, tools, and data flows in detail. We document every step of the role we\'re automating and find where AI adds the most value.',
     details: [
       'Map current processes and tool integrations',
       'Identify automation opportunities and potential blockers',
@@ -266,7 +266,7 @@ export const HOW_IT_WORKS_STEPS = [
     step: 3,
     title: 'Build & Deploy',
     shortDescription: 'We build your AI employee and integrate it into your systems.',
-    fullDescription: 'Our engineering team builds your custom AI employee using battle-tested AI infrastructure. We integrate with your existing tools, train the AI on your specific processes, and rigorously test before deployment.',
+    fullDescription: 'We build your AI employee on proven infrastructure, connect it to your tools, train it on your processes, and test thoroughly before going live.',
     details: [
       'Custom AI model configuration and training',
       'Integration with your tool stack (Slack, CRM, email, etc.)',
@@ -278,7 +278,7 @@ export const HOW_IT_WORKS_STEPS = [
     step: 4,
     title: 'Launch & Train',
     shortDescription: 'We deploy, test, and refine until peak performance.',
-    fullDescription: 'Your AI employee goes live with close monitoring. We fine-tune performance based on real-world results, incorporate your feedback, and ensure everything runs smoothly before stepping back.',
+    fullDescription: 'Your AI employee goes live with close monitoring. We tune performance based on real results, work in your feedback, and make sure everything runs well before stepping back.',
     details: [
       'Supervised launch with real-time monitoring',
       'Performance optimization based on actual results',
@@ -438,6 +438,6 @@ export const PRICING_FAQ = [
   },
   {
     question: 'What happens as AI models get better?',
-    answer: 'Your agent gets better too. As the underlying models from OpenAI, Anthropic, and others improve, your AI employee inherits those gains — better reasoning, faster responses, and new capabilities. It\'s like hiring someone who gets smarter every quarter without retraining.',
+    answer: 'Your agent improves too. As models from OpenAI, Anthropic, and others get better, your AI employee picks up those gains — better reasoning, faster responses, new capabilities. Think of it as a hire that levels up every quarter without retraining.',
   },
 ]

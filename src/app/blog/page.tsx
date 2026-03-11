@@ -9,8 +9,10 @@ import { cn } from '@/lib/utils'
 import post1 from '@/content/blog/why-your-next-ea-should-be-ai.json'
 import post2 from '@/content/blog/true-cost-hiring-vs-ai.json'
 import post3 from '@/content/blog/5-roles-to-automate.json'
+import post4 from '@/content/blog/when-ai-gets-it-wrong.json'
+import post5 from '@/content/blog/we-automated-ourselves-first.json'
 
-const posts = [post1, post2, post3].sort(
+const posts = [post1, post2, post3, post4, post5].sort(
   (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
 )
 
@@ -36,8 +38,8 @@ export default function BlogPage() {
               Insights on AI staffing
             </h1>
             <p className={cn('mt-4 text-lg', isDark ? 'text-silver' : 'text-muted-light')}>
-              Practical advice on building AI employees, automating operations,
-              and scaling your team with intelligence.
+              What we&apos;re learning about AI employees, automation, and running
+              leaner teams.
             </p>
           </motion.div>
         </Container>

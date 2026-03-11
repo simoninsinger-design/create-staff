@@ -37,7 +37,7 @@ export default function HowItWorksPage() {
               in 5 steps.
             </h1>
             <p className={cn('mt-6 text-lg', isDark ? 'text-silver' : 'text-muted-light')}>
-              A clear, proven process that minimizes disruption and maximizes results.
+              Here&apos;s how we go from first conversation to a working AI employee.
               No black boxes, no surprises.
             </p>
           </motion.div>
@@ -129,8 +129,8 @@ export default function HowItWorksPage() {
               Ready to get started?
             </h2>
             <p className={cn('mt-4 text-lg', isDark ? 'text-silver' : 'text-muted-light')}>
-              The first step is always a conversation. Book a free discovery call
-              and let&apos;s explore what&apos;s possible for your business.
+              Book a free 30-minute call. We&apos;ll talk through your business and
+              figure out if AI makes sense for any of your roles.
             </p>
             <div className="mt-8">
               <Button href="/contact" size="lg">

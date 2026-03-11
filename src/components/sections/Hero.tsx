@@ -48,7 +48,7 @@ export function Hero() {
             >
               <span className="inline-flex items-center gap-2 rounded-full bg-blue-electric/10 px-4 py-1.5 text-sm font-semibold text-blue-electric">
                 <span className="h-1.5 w-1.5 rounded-full bg-blue-electric animate-pulse" />
-                AI-Powered Workforce Solutions
+                Now Building AI Employees
               </span>
             </motion.div>
 
@@ -77,8 +77,8 @@ export function Hero() {
               )}
             >
               We build custom AI employees that handle real work — scheduling,
-              outreach, research, operations — so you can focus on what matters.
-              Staff that scales with you.
+              outreach, research, operations — so your team can focus on the
+              stuff that actually needs a human.
             </motion.p>
 
             <motion.div

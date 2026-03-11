@@ -33,8 +33,8 @@ const solutions = [
   },
   {
     icon: TrendingUp,
-    title: 'Infinite scalability',
-    description: 'Scale from 1 to 100 AI employees without a single interview or onboarding process.',
+    title: 'Scales when you do',
+    description: 'Go from 1 to 100 AI employees. No interviews, no onboarding.',
   },
   {
     icon: Shield,
@@ -44,7 +44,7 @@ const solutions = [
   {
     icon: BrainCircuit,
     title: 'Gets smarter over time',
-    description: 'As AI models improve, so does your agent — automatically. Your investment appreciates instead of depreciates.',
+    description: 'As AI models improve, so does your agent — automatically. It gets better over time, not worse.',
   },
 ]
 
@@ -71,7 +71,7 @@ export function ProblemSolution() {
         <SectionHeading
           badge="The Problem"
           title="You're hiring for roles AI can already do."
-          subtitle="Every day you delay, you're paying premium prices for work that doesn't require a human touch."
+          subtitle="You're paying full salary for work that doesn't need a person."
         />
 
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-24">

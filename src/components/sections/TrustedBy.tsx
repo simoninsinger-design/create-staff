@@ -27,7 +27,7 @@ export function TrustedBy() {
             isDark ? 'text-silver/50' : 'text-muted-light'
           )}
         >
-          Trusted by growing companies to build their AI workforce
+          Companies we've built AI employees for
         </motion.p>
       </div>
     </section>

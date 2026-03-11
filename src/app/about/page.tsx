@@ -12,22 +12,22 @@ const values = [
   {
     icon: Gem,
     title: 'Built to Last',
-    description: 'We don\'t build quick hacks. Every AI employee is engineered for reliability, scalability, and long-term performance.',
+    description: 'We don\'t build throwaway demos. If we ship it, it\'s built to keep running.',
   },
   {
     icon: Heart,
     title: 'Human-Centered AI',
-    description: 'AI should augment humans, not replace them entirely. We automate the repetitive so your team can focus on what\'s meaningful.',
+    description: 'AI handles the repetitive stuff so your team can do work that actually requires a brain.',
   },
   {
     icon: Eye,
     title: 'Radical Transparency',
-    description: 'No black boxes. You\'ll understand exactly how your AI employee works, what it does, and why it makes the decisions it makes.',
+    description: 'No black boxes. You\'ll know how your AI employee works and why it does what it does.',
   },
   {
     icon: Target,
     title: 'Obsessive Quality',
-    description: 'We\'d rather build one exceptional AI employee than ten mediocre ones. Quality is non-negotiable.',
+    description: 'We\'d rather build one that works really well than ten that sort of work.',
   },
 ]
 
@@ -36,7 +36,7 @@ const team = [
   {
     name: 'Simon Insinger',
     role: 'Co-Founder',
-    bio: 'Building the future of work with AI-powered teams.',
+    bio: 'Started CreateStaff to make AI employees practical for small teams.',
   },
   {
     name: 'Alex Fiduccia',
@@ -83,8 +83,8 @@ export default function AboutPage() {
               </span>
             </h1>
             <p className={cn('mt-6 text-lg', isDark ? 'text-silver' : 'text-muted-light')}>
-              Without the world-class price tag. We believe AI can democratize access to
-              exceptional operational talent — and we&apos;re building the company to prove it.
+              Without the price tag. Most companies can&apos;t afford a full operations team
+              early on. We think AI changes that — and we&apos;re building the company to prove it.
             </p>
           </motion.div>
         </Container>
@@ -95,7 +95,7 @@ export default function AboutPage() {
         <Container>
           <SectionHeading
             title="What makes us different"
-            subtitle="We're not a SaaS tool. We're your AI operations partner."
+            subtitle="We're not selling software. We build and run AI employees for you."
           />
 
           <div className="mx-auto max-w-4xl">
@@ -103,19 +103,19 @@ export default function AboutPage() {
               {[
                 {
                   title: 'Deep AI Expertise',
-                  description: 'Our team brings AI research experience from top universities and years of production AI deployment.',
+                  description: 'We\'ve built and shipped AI systems in production. Not just demos — real tools handling real work.',
                 },
                 {
                   title: 'Operational Experience',
-                  description: 'We\'ve scaled companies operationally. We understand workflows, bottlenecks, and what actually needs automating.',
+                  description: 'We\'ve run operations at growing companies. We know what actually needs automating versus what just sounds like it does.',
                 },
                 {
-                  title: 'We Build WITH You',
-                  description: 'This isn\'t off-the-shelf software. We embed with your team, understand your processes, and build something truly custom.',
+                  title: 'We Build With You',
+                  description: 'This isn\'t off-the-shelf software. We sit down with your team, learn your processes, and build something specific to how you work.',
                 },
                 {
                   title: 'Reliable Infrastructure',
-                  description: 'Built on OpenClaw — cutting-edge AI infrastructure that\'s battle-tested for reliability and performance.',
+                  description: 'Built on OpenClaw — production-grade AI infrastructure we\'ve been running and testing for years.',
                 },
               ].map((item, i) => (
                 <motion.div
@@ -145,7 +145,7 @@ export default function AboutPage() {
         <Container>
           <SectionHeading
             title="Our values"
-            subtitle="The principles that guide everything we build."
+            subtitle="What we actually care about."
           />
 
           <motion.div
@@ -182,7 +182,7 @@ export default function AboutPage() {
         <Container>
           <SectionHeading
             title="The team"
-            subtitle="Small, focused, and deeply committed to building exceptional AI employees."
+            subtitle="Two people. One focus."
           />
 
           <div className="mx-auto flex max-w-2xl justify-center gap-8">

@@ -52,7 +52,7 @@ export function ComparisonTable() {
       <Container>
         <SectionHeading
           title="How we compare."
-          subtitle="See how CreateStaff stacks up against traditional hiring options."
+          subtitle="How we compare to the alternatives."
         />
 
         <motion.div

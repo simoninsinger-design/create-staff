@@ -41,7 +41,7 @@ export function ServicesPreview() {
         <SectionHeading
           badge="Meet Your AI Team"
           title="AI employees for every role."
-          subtitle="From executive support to sales outreach, we build AI that does real work — not just chatbot demos."
+          subtitle="We build AI that does actual work, not chatbot demos."
         />
 
         <motion.div

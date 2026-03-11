@@ -48,7 +48,7 @@ export function HowItWorksPreview() {
         <SectionHeading
           badge="How It Works"
           title="From idea to AI employee in 4 steps."
-          subtitle="A clear, proven process that gets your AI employee up and running fast."
+          subtitle="Here's how we go from first call to working AI employee."
         />
 
         <div className="relative">

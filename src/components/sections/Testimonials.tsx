@@ -30,7 +30,7 @@ export function Testimonials() {
         <SectionHeading
           badge="Testimonials"
           title="Don't take our word for it."
-          subtitle="Hear from the companies already running AI employees."
+          subtitle="From companies already running AI employees."
         />
 
         <div className="relative mx-auto max-w-4xl">

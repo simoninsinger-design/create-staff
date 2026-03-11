@@ -71,7 +71,7 @@ export default function PricingPage() {
               </span>
             </h1>
             <p className={cn('mt-6 text-lg', isDark ? 'text-silver' : 'text-muted-light')}>
-              Transparent pricing. No hidden fees. ROI from day one.
+              What it costs. No hidden fees.
             </p>
           </motion.div>
         </Container>

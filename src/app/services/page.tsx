@@ -45,8 +45,8 @@ export default function ServicesPage() {
               </span>
             </h1>
             <p className={cn('mt-6 text-lg', isDark ? 'text-silver' : 'text-muted-light')}>
-              From executive support to sales outreach, we build AI that handles real work —
-              not just chatbot demos. Each AI employee is custom-built for your business.
+              We build AI that does actual work, not chatbot demos. Each one is
+              custom-built for your business.
             </p>
           </motion.div>
         </Container>

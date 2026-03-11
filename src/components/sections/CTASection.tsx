@@ -51,8 +51,8 @@ export function CTASection() {
           </h2>
 
           <p className="mx-auto mt-6 max-w-xl text-lg text-white/70">
-            Join the growing number of companies replacing expensive hires
-            with AI employees that work 24/7 and never ask for a raise.
+            Stop paying six figures for work that doesn't need a person.
+            Talk to us about building your first AI employee.
           </p>
 
           <div className="mt-10 flex flex-col items-center gap-6 sm:flex-row sm:justify-center">
